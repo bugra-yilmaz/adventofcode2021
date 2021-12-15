@@ -93,5 +93,5 @@ def prepare_question_for_current_day():
     _, day = get_current_year_day()
     cwd = os.path.dirname(os.path.abspath(__file__))
     source = f"{cwd}/template"
-    destination = f"{cwd}/../day{day}"
+    destination = f"{cwd}/../day{day:02}"
     shutil.copytree(source, destination)
